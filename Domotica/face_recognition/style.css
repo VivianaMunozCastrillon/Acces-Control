@@ -1,0 +1,166 @@
+/* Reseteo de estilos para eliminar márgenes y rellenos predeterminados en todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el tamaño total del elemento */
+    font-family: 'Roboto', sans-serif; /* Fuente predeterminada de la página */
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    text-align: center; 
+    background-image: url('./images/input_images/imagen4.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: white; 
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding: 15px 30px; 
+    position: fixed; 
+    top: 0; 
+    background: rgba(3, 60, 70, 0.7); 
+}
+
+/* Estilos para el logo en el encabezado */
+header img {
+    width: 100px; 
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style: none; 
+    display: flex; 
+}
+
+/* Estilos para cada elemento de la lista de navegación */
+nav ul li {
+    margin: 0 10px; 
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: 400; 
+    transition: 0.3s; 
+    font-size: 14px; 
+}
+
+/* Efecto al pasar el mouse sobre los enlaces de navegación */
+nav ul li a:hover {
+    color: #00d9ff; 
+}
+
+/* Contenedor de estado del sistema */
+.status-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+    background: rgba(34, 135, 125, 0.5); 
+    padding: 50px; 
+    border-radius: 10px; 
+    width: fit-content; 
+    min-height: 150px; 
+    margin: 15px auto; 
+    margin-top: 150px; 
+}
+
+/* Estilos generales para las imágenes */
+img {
+    width: 100px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+/* Estilos generales para los botones */
+.button {
+    padding: 10px 20px; 
+    margin: 10px; 
+    font-size: 18px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 5px; 
+    color: white; 
+    transition: 0.3s; 
+    font-weight: bold; 
+}
+
+/* Estilos para el botón "Abrir puerta" con efecto futurista */
+.open {
+    background-color: #00aaff; 
+    box-shadow: 0px 0px 15px #00ccff; 
+}
+
+/* Estilos para el botón "Cerrar puerta" con efecto futurista */
+.close {
+    background-color: #005577; 
+    box-shadow: 0px 0px 15px #0088aa; 
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.button:hover {
+    box-shadow: 0px 0px 25px #00ffff, 0px 0px 50px #00ffff; 
+    transform: scale(1.05); 
+}
+
+/* Estilos para el estado de conexión */
+.connection-status {
+    font-size: 16px; 
+    margin-top: 20px; 
+    color: #ffffff; 
+}
+
+/* Contenedor del chat */
+.chat-container {
+    position: fixed; 
+    bottom: 100px; 
+    right: 15px; 
+    width: 300px; 
+}
+
+/* Estilos para la caja del chat */
+.chatbox {
+    display: none; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    background: rgb(111, 158, 125); 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Icono para abrir el chat */
+.chat-toggle {
+    cursor: pointer; 
+    width: 50px; 
+    margin-left: 20px; 
+}
+
+/* Estilos para el área de mensajes del chat */
+#chatMessages {
+    height: 200px; 
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 10px; 
+    margin-bottom: 10px; 
+}
+
+/* Estilos para el pie de página */
+footer {
+    position: relative; 
+    bottom: 0px; 
+    font-size: 14px; 
+}
+
+/* Estilos para el texto dentro del footer */
+footer p {
+    opacity: 0.8; 
+    margin-top: 240px; 
+}

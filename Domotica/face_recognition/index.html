@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento Facial y Control del Servo</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <img src="./images/input_images/logo.png" alt="Logo de seguridad"> 
+        <nav>
+            <ul>
+                <li><a href="bienvenida.html">Inicio</a></li> 
+                <li><a href="estado_casa.html">Estado de la casa</a></li> 
+                <li><a href="ayuda.html">Ayuda</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- Estado del sistema -->
+    <div class="status-container">
+    <p class="status">Estado del servo: <span id="servoStatus">Desconocido</span></p>
+    <p class="status">Sensor: <span id="sensorStatus">Sin detección</span></p>
+    <p class="connection-status">Estado de conexión: <span id="wsStatus">Desconectado</span></p>
+</div>
+
+    <!-- Botones para controlar el acceso -->
+    <button class="button open" onclick="iniciarReconocimiento()">ABRIR PUERTA</button>
+    <button class="button close" onclick="enviarMensaje('cerrar')">CERRAR PUERTA</button>
+
+    <!-- Elementos ocultos para el procesamiento de video -->
+    <video id="videoElement" autoplay playsinline width="400" style="display:none;"></video>
+    <canvas id="canvasElement" style="display:none;"></canvas>
+
+    
+    <!-- Sección de chat con GPT -->
+    <div class="chat-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" class="chat-toggle" onclick="toggleChat()"> <!-- Botón para abrir/cerrar el chat -->
+        <div class="chatbox" id="chatbox">
+            <p><strong>Chat con GPT</strong></p>
+            <div id="chatMessages"></div> <!-- Área de mensajes del chat -->
+            <input type="text" id="chatInput" placeholder="Escribe un mensaje..."> <!-- Campo de entrada de texto -->
+            <button onclick="enviarMensajeGPT()">Enviar</button> <!-- Botón para enviar mensaje -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>© 2025 Domótica | Sistema de control de acceso con reconocimiento facial y monitoreo en tiempo real.</p>
+    </footer>
+</body>
+</html>
