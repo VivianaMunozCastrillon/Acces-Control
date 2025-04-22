@@ -9,7 +9,7 @@
 /* Estilos generales del cuerpo de la página */
 body {
     text-align: center; 
-    background-image: url('./images/input_images/imagen4.jpg'); 
+    background-image: url('/Domotica/face_recognition/images/input_images/imagen4.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 

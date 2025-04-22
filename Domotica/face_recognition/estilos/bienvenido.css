@@ -29,7 +29,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('./images/input_images/image.jpg') no-repeat center center/cover;
+    background: url('/Domotica/face_recognition/images/input_images/image.jpg') no-repeat center center/cover;
     filter: blur(4px);
     z-index: -1;
 }
