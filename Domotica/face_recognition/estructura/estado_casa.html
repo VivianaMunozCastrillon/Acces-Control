@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Sensores</title>
+    <link rel="stylesheet" href="/Domotica/face_recognition/estilos/estado.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <img src="/Domotica/face_recognition/images/input_images/logo.png" alt="Logo de seguridad"> 
+        <nav>
+            <ul>
+                <li><a href="bienvenida.html">Inicio</a></li> 
+                <li><a href="index.html">Control de acceso</a></li> 
+                <li><a href="ayuda.html">Ayuda</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <h2>Monitoreo de Sensores</h2>
+        <p>Estado de conexión: <span id="wsStatus">Desconectado</span></p>
+
+        <div id="mensajesSensores">
+            <p id="sensorD5Mensaje" class="mensajeSensor"></p>
+            <p id="sensorD6Mensaje" class="mensajeSensor"></p>
+        </div>
+        
+        <div id="mapContainer">
+            <img src="/Domotica/face_recognition/images/input_images/casa.png" alt="Mapa de la Casa" id="mapImage">
+            <img src="/Domotica/face_recognition/images/input_images/Dazai.png" id="sensorD5" class="persona" style="top: 50px; left: 100px;" alt="Persona D5">
+            <img src="/Domotica/face_recognition/images/input_images/Sailor.png" id="sensorD6" class="persona" style="top: 200px; left: 300px;" alt="Persona D6">
+        </div>
+    </main>
+
+    <script src="/Domotica/face_recognition/script.js"></script>
+</body>
+</html>

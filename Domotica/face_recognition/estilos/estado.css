@@ -1,0 +1,124 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos generales */
+body {
+    text-align: center;
+    background-image: url('/Domotica/face_recognition/images/input_images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Encabezado fijo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    background: rgb(144, 154, 156);
+    z-index: 1000;
+}
+
+/* Logo en el encabezado */
+header img {
+    width: 100px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #00d9ff;
+}
+
+/* Contenedor principal debajo del header */
+main {
+    padding-top: 120px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #221a1a;
+}
+
+/* Estado de conexión */
+#wsStatus {
+    font-weight: bold;
+    color: red;
+}
+
+/* Contenedor del mapa */
+#mapContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#mapImage {
+    width: 600px;
+    height: auto;
+    z-index: 1;
+    position: relative;
+}
+
+#sensorD6 {
+    margin-top: -490px; 
+    width: 90px;
+    height: 60px;
+}
+
+#sensorD5 {
+    margin-top: -450px; 
+    width: 90px;
+    height: 60px;
+}
+
+.persona {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 1;
+    position: relative;
+}
+
+.persona:hover {
+    transform: scale(1.1);
+}
+
+
+
+.mensajeSensor.oculto {
+    display: none;
+}
+
+.mensajeSensor.alerta {
+    background-color: #30be70; 
+}
+
